@@ -1,0 +1,8 @@
+---
+ services:
+   db:
+     image: kavya016/makeup-store:db
+     ports:
+       - "3306:3306"
+     deploy:
+       replicas: 1
