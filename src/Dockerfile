@@ -1,6 +1,8 @@
-FROM tomcat:9.0-jdk17-temurin
+FROM tomcat:9.0-jdk11
 
-COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+COPY target/makeup-store.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
