@@ -1,0 +1,11 @@
+---
+services:
+  app:
+    image: kavya016/makeup-store:app
+    ports:
+      - "8080:8080"
+    deploy:
+      replicas: 1
+    
+
+ 
